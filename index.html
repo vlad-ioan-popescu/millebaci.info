@@ -15,13 +15,18 @@
 
 		<!-- css -->
 		<link rel="stylesheet" href="_css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
 
 		<!-- js -->
+
 		<script src="_scripts/script.js" defer></script>
 	</head>
 	<body>
 		<div class="desktop-nav">
-			<div class="container flex">
+			<div class="container flex flex-center">
 				<img src="_img/logo.png" id="logo" alt="logo Mille Baci" />
 				<a href="" class="nav-item">Home</a>
 				<a href="" class="nav-item">&Uuml;ber uns</a>
@@ -69,8 +74,6 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- <div class="tiles bg_grey" id="separatorAboutus"></div> -->
 
 		<section class="menu">
 			<div class="container center">
@@ -198,7 +201,7 @@
 				<h2 class="underline">Was die Leute über uns sagen</h2>
 
 				<div class="testimonial-container flex">
-					<div class="testimonial-item">
+					<div class="card">
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
 							soluta assumenda suscipit dolore, fugit eaque similique nemo at,
@@ -211,7 +214,7 @@
 							class="testimonial-pic"
 						/>
 					</div>
-					<div class="testimonial-item">
+					<div class="card">
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
 							soluta assumenda suscipit dolore, fugit eaque similique nemo at,
@@ -224,7 +227,7 @@
 							class="testimonial-pic"
 						/>
 					</div>
-					<div class="testimonial-item">
+					<div class="card">
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
 							soluta assumenda suscipit dolore, fugit eaque similique nemo at,
@@ -241,4 +244,52 @@
 			</div>
 		</section>
 	</body>
+	<section class="footer">
+		<div class="container flex flex-top">
+			<div class="footer-item left">
+				<h4>Finden Sie uns hier</h4>
+				<p>Nulla non pulvinar tellus. Aliquam erat volutpat.</p>
+				<div class="social">
+					<a href=""
+						><img src="_img/icon_instagram.png" alt="instagram icon"
+					/></a>
+					<a href=""><img src="_img/icon_fb.png" alt="fb icon" /></a>
+				</div>
+			</div>
+			<div class="footer-item left">
+				<h4>Kontaktiere uns</h4>
+				<a href="tel:07323-952448" class="contact-link phone">07323.952448</a>
+				<a href="/" class="contact-link web">millebaci.info</a>
+				<a href="mailto:gelato@millebaci.info" class="contact-link email"
+					>gelato@millebaci.info</a
+				>
+			</div>
+			<div class="footer-item right">
+				<h4>Lokalisierung</h4>
+				<a href="" class="contact-link address"
+					>Marktplatz 8-89547<br />Gerstetten</a
+				>
+				<br />
+				<a href="" class="light button">lern mehr</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container flex flex-around flex-center">
+			<a href="">Datenschutz</a>
+			<a href="">Gutschein</a>
+			<img src="_img/logo_footer.png" alt="logo mille baci" />
+			<a href=""> Kundenbuch</a>
+			<a href="">Kontakt</a>
+		</div>
+		<div class="credits">&copy; 2024 - Karis Dev</div>
+	</footer>
+
+	<!-- scroll to top arrow -->
+	<img
+		src="_img/icon_scrolltotop.png"
+		alt="scroll to top"
+		id="scrollButton"
+		onclick="scrollToTop();"
+	/>
 </html>
