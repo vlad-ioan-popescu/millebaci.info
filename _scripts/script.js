@@ -32,3 +32,24 @@ document.querySelector('.cta').addEventListener('mouseover', function (e) {
 document.querySelector('.cta').addEventListener('mouseout', function (e) {
 	e.target.innerText = oldTel;
 });
+
+// sageata de scroll to top
+window.onscroll = function () {
+	scrollFunction();
+};
+
+function scrollFunction() {
+	if (
+		document.body.scrollTop > 480 ||
+		document.documentElement.scrollTop > 480
+	) {
+		document.getElementById('scrollButton').style.display = 'block';
+	} else {
+		document.getElementById('scrollButton').style.display = 'none';
+	}
+}
+
+function scrollToTop() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}

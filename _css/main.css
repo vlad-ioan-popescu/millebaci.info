@@ -41,9 +41,13 @@
 .flex {
 	display: flex;
 	justify-content: space-between;
+}
+.flex-top {
+	align-items: start;
+}
+.flex-center {
 	align-items: center;
 }
-
 .flex-column {
 	flex: 1;
 }
@@ -233,7 +237,6 @@ section {
 	background: url('../_img/bg_fade.png') top left repeat-x,
 		url('../_img/bg_tile_beige.png') bottom left repeat-x,
 		url('../_img/bg_gray_wood_vertical.jpg') repeat;
-	min-height: 1000px;
 	position: relative;
 	top: -1px;
 }
@@ -318,13 +321,95 @@ section {
 	position: relative;
 	top: -1px;
 }
-.testimonial-item {
+.card {
 	width: 32%;
 	padding-top: 50px;
-	margin-top: 50px;
+	margin: 50px 0;
 	background: url('../_img/quote_decor.png') top center no-repeat;
+}
+.card p {
+	margin-bottom: 0.8rem;
 }
 .testimonial-pic {
 	border-radius: 50%;
 	box-shadow: 4px 4px 10px #999;
+}
+
+/******************** FIRST FOOTER **************/
+.footer {
+	background: url('../_img/bg_gray_wood_vertical.jpg') repeat;
+	position: relative;
+	top: -1px;
+	color: #fff;
+}
+.footer h4 {
+	font-size: 1.8rem;
+	margin-bottom: 10px;
+}
+.footer p {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+.footer-item {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: start;
+}
+.social img {
+	margin-right: 0.7rem;
+}
+.contact-link {
+	display: block;
+	padding-left: 40px;
+	margin-bottom: 0.6rem;
+	line-height: 30px;
+	font-size: 1.3rem;
+	color: #fff;
+}
+.phone {
+	background: url('../_img/icon_phone.png') left center no-repeat;
+}
+.email {
+	background: url('../_img/icon_email.png') left center no-repeat;
+}
+.web {
+	background: url('../_img/icon_web.png') left center no-repeat;
+}
+.address {
+	background: url('../_img/icon_address.png') left top no-repeat;
+	width: 230px;
+}
+.footer-item.right {
+	align-items: end;
+}
+/********************** REAL FOOTER ********************/
+footer {
+	padding-top: 20px;
+}
+footer a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.5rem;
+	transition: color 0.2s linear;
+}
+footer a:hover {
+	color: #f3c24d;
+}
+.credits {
+	padding: 30px 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+/* scroll arrow */
+#scrollButton {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	cursor: pointer;
 }
