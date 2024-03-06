@@ -41,6 +41,7 @@
 .flex {
 	display: flex;
 	justify-content: space-between;
+	gap: 15px;
 }
 .flex-top {
 	align-items: start;
@@ -55,18 +56,26 @@
 	width: min(94%, 1200px);
 	margin: 0 auto;
 }
-/* *************************************  GENERAL  STYLES ************************** */
-h2 {
+/* *************************************  GENERAL  STYLES ************************* */
+h1,
+h2,
+h3,
+h4 {
 	font-family: 'Lora', serif;
+}
+h2 {
 	font-size: 3rem;
 	margin: 35px 0;
 }
-h2.light {
+.light {
 	color: #ddd5cc;
 }
 h2.underline {
 	padding-bottom: 50px;
-	background: url('../_img/line_decor.png') no-repeat bottom center;
+	background: url('../_img/line_decor_gray.png') no-repeat bottom center;
+}
+h2.underline.light {
+	background: url('../_img/line_decor_light.png') no-repeat bottom center;
 }
 p {
 	font-size: 1.4rem;
@@ -96,6 +105,22 @@ ol {
 	list-style: none;
 }
 
+/******* polaroid photos **********/
+.polaroid-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.scotch {
+	position: relative;
+	bottom: -15px;
+	width: 170px;
+}
+.polaroid {
+	padding: 20px 20px 40px 20px;
+	background-color: #fff;
+	box-shadow: 5px 5px 10px #666;
+}
 /* *************************************** BIG ELEMENTS ****************************** */
 html {
 	/* font-size: 62.5%; */
@@ -110,6 +135,8 @@ body {
 }
 section {
 	padding: 100px 0;
+	position: relative;
+	bottom: -1px;
 }
 
 /************************************* NAV DESKTOP *************************************/
@@ -139,7 +166,8 @@ section {
 	letter-spacing: 0.1rem;
 	transition: color 0.2s linear;
 }
-.nav-item:not(.cta):hover {
+.nav-item:not(.cta):hover,
+.nav-item.current {
 	color: #f3c24d;
 	border-bottom: 2px solid #f3c24d;
 }
@@ -170,7 +198,8 @@ section {
 	color: #1e2832;
 	font-weight: 500;
 }
-.desktop-nav.faded .nav-item:not(.cta):hover {
+.desktop-nav.faded .nav-item:not(.cta):hover,
+.desktop-nav.faded .current {
 	color: #1e2832;
 	border-bottom: 2px solid #1e2832;
 }
@@ -185,7 +214,6 @@ section {
 
 .hero {
 	position: relative;
-	height: 436px;
 	bottom: -10px;
 }
 #banner {
@@ -202,6 +230,7 @@ section {
 	background-repeat: repeat-x;
 	background-position: left center;
 	position: relative;
+	bottom: -2px;
 }
 
 .bg_beige {
@@ -227,7 +256,7 @@ section {
 }
 #aboutus_left {
 	background: url('../_img/bg_tomatos.png') no-repeat bottom right;
-	padding-bottom: 10px;
+	padding-bottom: 100px;
 }
 
 /*************************************** MENU ***********************************/
@@ -238,7 +267,6 @@ section {
 		url('../_img/bg_tile_beige.png') bottom left repeat-x,
 		url('../_img/bg_gray_wood_vertical.jpg') repeat;
 	position: relative;
-	top: -1px;
 }
 .grid-container {
 	display: grid;
@@ -308,6 +336,7 @@ section {
 	height: auto;
 }
 .menu-item .menu-text {
+	font-family: 'Lora', serif;
 	color: #fff;
 	margin-top: 0.8rem;
 	font-size: 2rem;
@@ -319,7 +348,6 @@ section {
 	background: url('../_img/bg_tile_grey.png') bottom left repeat-x,
 		url('../_img/bg_beige_cloth.jpg') repeat;
 	position: relative;
-	top: -1px;
 }
 .card {
 	width: 32%;
@@ -330,6 +358,11 @@ section {
 .card p {
 	margin-bottom: 0.8rem;
 }
+.card p.name {
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
 .testimonial-pic {
 	border-radius: 50%;
 	box-shadow: 4px 4px 10px #999;
@@ -339,7 +372,6 @@ section {
 .footer {
 	background: url('../_img/bg_gray_wood_vertical.jpg') repeat;
 	position: relative;
-	top: -1px;
 	color: #fff;
 }
 .footer h4 {
@@ -383,9 +415,22 @@ section {
 .footer-item.right {
 	align-items: end;
 }
+.footer-button {
+	background-color: #f3c24d;
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: bold;
+	padding: 1rem 4rem;
+	border-radius: 20px;
+	transition: box-shadow 0.1s linear;
+}
+.footer-button:hover {
+	box-shadow: 3px 3px 6px -2px #333;
+}
 /********************** REAL FOOTER ********************/
 footer {
 	padding-top: 20px;
+	background-color: #1e2832;
 }
 footer a {
 	color: #fff;
@@ -412,4 +457,41 @@ footer a:hover {
 	z-index: 99;
 	border: none;
 	cursor: pointer;
+}
+
+/************* ABOUT US PAGE *************/
+
+.text-aboutus {
+	width: 45%;
+}
+.pictures {
+	background: url('../_img/icon_icecream_small.png') top right no-repeat;
+}
+.call-us {
+	padding: 45px 0 45px 0;
+	text-align: center;
+	background: #888 url('../_img/bg_tile_grey.png') bottom left repeat-x;
+}
+.call-us p {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+.call-us a {
+	color: #f3c24d;
+}
+
+/******************** PAGINILE DE MENIURI *********************/
+.menu-category {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #fff;
+	width: 24%;
+	background: url('../_img/icon_triangle.png') bottom center no-repeat;
+}
+.menu-category img {
+	width: 50%;
 }

@@ -24,12 +24,17 @@
 
 		<script src="_scripts/script.js" defer></script>
 	</head>
+	<style>
+		.hero {
+			height: 436px;
+		}
+	</style>
 	<body>
 		<div class="desktop-nav">
 			<div class="container flex flex-center">
 				<img src="_img/logo.png" id="logo" alt="logo Mille Baci" />
-				<a href="" class="nav-item">Home</a>
-				<a href="" class="nav-item">&Uuml;ber uns</a>
+				<a href="/" class="nav-item current">Home</a>
+				<a href="uber-uns.html" class="nav-item">Über uns</a>
 				<a href="" class="nav-item">Pizzeria</a>
 				<a href="" class="nav-item">Eiscaf&eacute;</a>
 				<a href="" class="nav-item">Fotos</a>
@@ -50,7 +55,7 @@
 		<div class="tiles bg_beige" id="separatorHero"></div>
 
 		<section class="about-us">
-			<div class="container flex top">
+			<div class="container flex flex-top">
 				<div class="flex-column center" id="aboutus_left">
 					<img src="_img/icon_pizza.png" alt="icon pizza" id="icon_pizza" />
 					<h2 class="underline">
@@ -61,7 +66,7 @@
 						Wir sind stolz darauf, Ihnen authentische italienische Küche <br />
 						in gemütlicher Atmosphäre zu bieten.
 					</p>
-					<a href="" class="dark button float-left">lern mehr</a>
+					<a href="" class="footer-button">lern mehr</a>
 				</div>
 				<div class="flex-column right">
 					<img
@@ -213,6 +218,7 @@
 							alt=""
 							class="testimonial-pic"
 						/>
+						<p class="name">Ingrid Schaeffer</p>
 					</div>
 					<div class="card">
 						<p>
@@ -226,6 +232,7 @@
 							alt=""
 							class="testimonial-pic"
 						/>
+						<p class="name">Johannes Reutter</p>
 					</div>
 					<div class="card">
 						<p>
@@ -239,57 +246,58 @@
 							alt=""
 							class="testimonial-pic"
 						/>
+						<p class="name">Ingrid Schaeffer</p>
 					</div>
 				</div>
 			</div>
 		</section>
-	</body>
-	<section class="footer">
-		<div class="container flex flex-top">
-			<div class="footer-item left">
-				<h4>Finden Sie uns hier</h4>
-				<p>Nulla non pulvinar tellus. Aliquam erat volutpat.</p>
-				<div class="social">
-					<a href=""
-						><img src="_img/icon_instagram.png" alt="instagram icon"
-					/></a>
-					<a href=""><img src="_img/icon_fb.png" alt="fb icon" /></a>
+		<section class="footer">
+			<div class="container flex flex-top">
+				<div class="footer-item left">
+					<h4>Finden Sie uns hier</h4>
+					<p>Nulla non pulvinar tellus. Aliquam erat volutpat.</p>
+					<div class="social">
+						<a href=""
+							><img src="_img/icon_instagram.png" alt="instagram icon"
+						/></a>
+						<a href=""><img src="_img/icon_fb.png" alt="fb icon" /></a>
+					</div>
+				</div>
+				<div class="footer-item left">
+					<h4>Kontaktiere uns</h4>
+					<a href="tel:07323-952448" class="contact-link phone">07323.952448</a>
+					<a href="/" class="contact-link web">millebaci.info</a>
+					<a href="mailto:gelato@millebaci.info" class="contact-link email"
+						>gelato@millebaci.info</a
+					>
+				</div>
+				<div class="footer-item right">
+					<h4>Lokalisierung</h4>
+					<a href="" class="contact-link address"
+						>Marktplatz 8-89547<br />Gerstetten</a
+					>
+					<br />
+					<a href="" class="footer-button">lern mehr</a>
 				</div>
 			</div>
-			<div class="footer-item left">
-				<h4>Kontaktiere uns</h4>
-				<a href="tel:07323-952448" class="contact-link phone">07323.952448</a>
-				<a href="/" class="contact-link web">millebaci.info</a>
-				<a href="mailto:gelato@millebaci.info" class="contact-link email"
-					>gelato@millebaci.info</a
-				>
+		</section>
+		<footer>
+			<div class="container flex flex-around flex-center">
+				<a href="">Datenschutz</a>
+				<a href="">Gutschein</a>
+				<img src="_img/logo_footer.png" alt="logo mille baci" />
+				<a href=""> Kundenbuch</a>
+				<a href="">Kontakt</a>
 			</div>
-			<div class="footer-item right">
-				<h4>Lokalisierung</h4>
-				<a href="" class="contact-link address"
-					>Marktplatz 8-89547<br />Gerstetten</a
-				>
-				<br />
-				<a href="" class="light button">lern mehr</a>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="container flex flex-around flex-center">
-			<a href="">Datenschutz</a>
-			<a href="">Gutschein</a>
-			<img src="_img/logo_footer.png" alt="logo mille baci" />
-			<a href=""> Kundenbuch</a>
-			<a href="">Kontakt</a>
-		</div>
-		<div class="credits">&copy; 2024 - Karis Dev</div>
-	</footer>
+			<div class="credits">&copy; 2024 - Karis Dev</div>
+		</footer>
 
-	<!-- scroll to top arrow -->
-	<img
-		src="_img/icon_scrolltotop.png"
-		alt="scroll to top"
-		id="scrollButton"
-		onclick="scrollToTop();"
-	/>
+		<!-- scroll to top arrow -->
+		<img
+			src="_img/icon_scrolltotop.png"
+			alt="scroll to top"
+			id="scrollButton"
+			onclick="scrollToTop();"
+		/>
+	</body>
 </html>
