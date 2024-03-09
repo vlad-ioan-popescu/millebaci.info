@@ -129,7 +129,6 @@ html {
 body {
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.3;
-	min-height: 2500px;
 	background: url('../_img/bg_gray_wood.jpg') no-repeat top center;
 	background-size: 100% 530px;
 }
@@ -415,7 +414,10 @@ section {
 .footer-item.right {
 	align-items: end;
 }
-.footer-button {
+.footer-item:nth-of-type(2) {
+	padding-left: 160px;
+}
+.cta-button {
 	background-color: #f3c24d;
 	color: #fff;
 	font-size: 1.7rem;
@@ -424,7 +426,7 @@ section {
 	border-radius: 20px;
 	transition: box-shadow 0.1s linear;
 }
-.footer-button:hover {
+.cta-button:hover {
 	box-shadow: 3px 3px 6px -2px #333;
 }
 /********************** REAL FOOTER ********************/
@@ -467,6 +469,7 @@ footer a:hover {
 .pictures {
 	background: url('../_img/icon_icecream_small.png') top right no-repeat;
 }
+/**************** banner de CALL US ***************/
 .call-us {
 	padding: 45px 0 45px 0;
 	text-align: center;
@@ -481,17 +484,141 @@ footer a:hover {
 .call-us a {
 	color: #f3c24d;
 }
-
+/******************* banner de MENULIST *************/
+.menulist {
+	padding: 35px 0;
+    text-align: center;
+	background: #CAC2BB;
+}
+.menulist p {
+    font-size: 2.4rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #1e2832;
+}
 /******************** PAGINILE DE MENIURI *********************/
+.menu-categories {
+	height: auto;
+	font-family: 'Lora', serif;
+}
 .menu-category {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid #fff;
 	width: 24%;
+	height: 200px;
+	padding-bottom: 25px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #ddd5cc;
+	transition: color 0.2s linear;
+	cursor: pointer;
+}
+.menu-category:hover,
+.menu-category.current {
 	background: url('../_img/icon_triangle.png') bottom center no-repeat;
+	color: #fff;
 }
 .menu-category img {
-	width: 50%;
+	height: max(50%, 90px);
+	filter: sepia(100%);
+}
+
+.menu-category:hover img,
+.menu-category.current img {
+	filter: sepia(0%);
+}
+/* cand e sticky raman doar pozele */
+.menu-categories.sticky .menu-category {
+	height: auto;
+	/* background-image: none; */
+}
+.menu-categories.sticky .menu-category span {
+	display: none;
+}
+
+/* ************* MENU CONTAINER AND ITEMS ********* */
+.menu-container {
+	/* background: url('../_img/bg_menu_details.png') bottom right no-repeat; */
+	min-height: 600px;
+	padding: 0 0 340px 0;
+}
+
+.menu-canvas {
+	background: url('../_img/bg_menu_canvas_top.jpg') top center no-repeat,
+		url('../_img/bg_menu_canvas_bottom.jpg') bottom center no-repeat,
+		url('../_img/bg_menu_canvas_middle.jpg') top center repeat-y;
+	background-color: #ddd5cc;
+	min-height: 700px;
+	padding: 130px 80px 130px 80px;
+    position: relative;
+}
+.menu-canvas img {
+    position:absolute;
+    z-index: 3;
+}
+.menu-canvas img.top-right {
+    top:300px;
+    right:-50px;
+}
+.menu-canvas img.very-top-right {
+    top:-120px;
+    right:-190px;
+}
+.menu-canvas img.top-left {
+    top:20px;
+    left:-150px;
+}
+.menu-canvas img.bottom-left {
+    bottom:-230px;
+    left:-250px;
+}
+.menu-canvas img.bottom {
+    bottom:-150px;
+    right:0px;
+}
+.menu-canvas p {
+    margin-bottom:0.5rem;
+    font-size:2.2rem;
+}
+.menu-canvas span.description {
+    display: block;
+    margin-left: 3rem;
+    font-size:1.4rem;
+    margin-bottom:0.6rem;
+}
+.ribbon {
+    margin: 2rem 0 1.2rem 0;
+
+}
+.ribbon span {
+    display:inline-block;
+    position:relative;
+    left:30px;
+    font-size:2.6rem;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    line-height:50px;
+    padding:10px 25px;
+    background: url('../_img/bg_ribbon_middle.png') top left repeat-x;
+    color:#ddd5cc;
+}
+.ribbon span::before {
+    content: '';
+    position: absolute;
+    left:-30px;
+    top:0;
+    width:30px;
+    height:100%;
+    background: url('../_img/bg_ribbon_left.png') top left no-repeat;
+}
+.ribbon span::after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:100%;
+    width:30px;
+    height:100%;
+    background: url('../_img/bg_ribbon_right.png') top left no-repeat;
 }

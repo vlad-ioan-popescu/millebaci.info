@@ -21,7 +21,7 @@
 		/>
 
 		<!-- js -->
-
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" async></script>
 		<script src="_scripts/script.js" defer></script>
 	</head>
 	<!-- stiluri proprii paginii -->
@@ -31,7 +31,6 @@
 			background-size: 100%;
 		}
 		.hero {
-			background: none;
 			padding-bottom: 0;
 		}
 		h1 {
@@ -55,18 +54,184 @@
 		</div>
 		<div class="hero center">
 			<h1 class="light">Unser Menü</h1>
-			<div class="container flex">
-				<div class="menu-category">
-					<img src="_img/menu_salate_icon.png" alt="menu icon" />
-					<p>Spezialität<br />des Hauses</p>
+			<div class="container">
+				<div class="flex menu-categories">
+					<div data-category="special" class="menu-category current">
+						<img src="_img/menu_special_icon.png" alt="menu icon" />
+						<span>Spezialität<br />des Hauses</span>
+					</div>
+					<div  data-category="salate" class="menu-category">
+						<img src="_img/menu_salate_icon.png" alt="menu icon" />
+						<span
+							>Insalate und <br />
+							Antipasti</span
+						>
+					</div>
+					<div data-category="pizza" class="menu-category">
+						<img src="_img/menu_pizza_icon.png" alt="menu icon" />
+						<span>Pizza</span>
+					</div>
+					<div  data-category="paste" class="menu-category">
+						<img src="_img/menu_paste_icon.png" alt="menu icon" />
+						<span>Pasta</span>
+					</div>
 				</div>
-				<div class="menu-category"></div>
-				<div class="menu-category"></div>
-				<div class="menu-category"></div>
 			</div>
 		</div>
+		<section class="menu-container">
+			<div class="container menu-canvas">
 
-		<section class="about-us"></section>
+                <!-- ---------- SPECIAL ------------ -->
+                <div class="submenu" data-menufor="special">
+                    <p>Bocconcini Calabrese</p>
+                    <span class="description">scharfer Salami und Käse</span>
+                    <p>Bocconcini Milano</p>
+                    <span class="description">Salami, milden Peperoni und Käse</span>
+                    <p>Bocconcini Schinken</p>
+                    <span class="description">Schinken und Käse</span>
+                    <p>Bocconcini Tonno </p>
+                    <span class="description">Thunfisch, Zwiebel und Käse
+                    </span>
+                    <p>Bocconcini Vegetarisch  </p>
+                    <span class="description">Paprika, Champignons, Blattspinat und Käse 
+                    </span>
+                    <p>Beilagen 1 </p>
+                    <span class="description">frische Champignons, milde Peperoni, Paprika, Zwiebel, Oliven, Ananas, Blattspinat, Mais,  Olivenöl mit Chili , Knoblauch, Kapern </span>
+                    <p>Beilagen 2 </p>
+                    <span class="description">Tomatenscheiben, Speckwürfel, geriebener Käse, scharfe Salami, Sardellen, Mozzarella, Artischocken, Rucola, Thunfisch, Gorgonzola, Ei, Parmesan, Schinken, Salami, Kartoffelscheiben, Hirtenkäse </span>
+                    
+                    
+                <!-- ---------- SALATE ------------ -->
+                </div>
+                <div class="submenu" data-menufor="salate" style="display:none;">
+                    <p>Insalata Caprese</p>
+                    <span class="description">Tomaten- u. Mozzarellascheiben, Balsamico, Olivenöl, Pizzabrot</span>
+                    <p>Insalata Mista </p>
+                    <span class="description">gemischter Salat - klein oder groß </span>
+                    <p>Insalata di Pomodori</p>
+                    <span class="description">Tomatensalat mit Zwiebeln </span>
+                    <p>Insalata Toscana </p>
+                    <span class="description">gemischter Salat, Thunfisch, Oliven,Mais, Zwiebel, Pizzabrot</span>
+                    <p>Antipasto Misto</p>
+                    <span class="descrscaniption">gemischter Vorspeisenteller mit Pizzabrot</span>
+
+                </div>
+                
+                <!-- ---------- PIZZA  ------------ -->
+                <div class="submenu" data-menufor="pizza" style="display:none;">
+                    <p>Pizza Calzone  </p>
+                    <span class="description">gefüllte Pizza Salami, Schinken, Champignons, Tomaten u. Käse </span>
+                    <p>Pizza Chefin   </p>
+                    <span class="description">Schinken, Ei, Tomaten, Käse</span>
+                    <p>Pizza Diavolo </p>
+                    <span class="description">scharfe Salami, milde Peperoni, scharfes Öl, Tomaten, Käse</span>
+                    <p>Pizza Dolomiti   </p>
+                    <span class="description">Rauchfleisch, Ei, Zwiebel, Tomaten, Käse</span>
+                    <p>Pizza Funghi </p>
+                    <span class="description">frische Champignons, Tomaten und Käse</span>
+                    <p>Pizza Greco   </p>
+                    <span class="description">Hirtenkäse, Oliven, Peperoni</span>
+                    <p>Pizza Hawai  </p>
+                    <span class="description">Schinken, Ananas, Tomaten und Käse</span>
+                    <p>Pizza Helene  </p>
+                    <span class="description">mit Birnenscheiben und Gorgonzola</span>
+                    <p>Pizza Julia </p>
+                    <span class="description">frisch gebackenes Pizzabrot mit marinierten Tomaten- und Mozzarellawürfeln und Rucola belegt</span>
+                    <p>Pizza Margerita  </p>
+                    <span class="description">Tomaten und Käse</span>
+                    <p>Pizza Mille baci  </p>
+                    <span class="description">Schinken, Salami, Paprika, Champignons, Tomaten, Käse</span>
+                    <p>Pizza Mille Mare   </p>
+                    <span class="description">Meeresfrüchte, Knoblauch, Tomaten, Käse</span>
+                    <p>Pizza Pane   </p>
+                    <span class="description">Pizzabrot mit Oregano und Olivenöl</span>
+                    <p>Pizza Parma    </p>
+                    <span class="description">luftgetrockneter Schinken, Rucola, Parmesansplitter, Tomaten, Käse</span>
+                    <p>Pizza Pisa   </p>
+                    <span class="description">Salami, Oliven, Artischocken, Sardellen, Tomaten, Käse </span>
+                    <p>Pizza Popeye    </p>
+                    <span class="description">Gorgonzola, Blattspinat, Tomaten, Käse </span>
+                    <p>Pizza Prosciutto    </p>
+                    <span class="description">Schinken, Tomaten und Käse </span>
+                    <p>Pizza Quattro Formaggi    </p>
+                    <span class="description">Edamer, Gorgonzola, Parmesan, Mozzarella, Tomaten, Käse</span>
+                    <p>Pizza Quattro Stagioni     </p>
+                    <span class="description">Schinken, Paprika, Pilze, Artischocken, Tomaten, Käse </span>
+                    <p>Pizza Roma      </p>
+                    <span class="description">Sardellen, Oliven, Kapern, Zwiebel, Tomaten, Käse</span>
+                    <p>Pizza Romeo</p>
+                    <span class="description">scharfe Salami, Mozzarella, Rucola, Parmesansplitter, Tomaten, Käse </span>
+                    <p>Pizza Salami     </p>
+                    <span class="description">Salami, Tomaten und Käse </span>
+                    <p>Pizza Sella Ronda    </p>
+                    <span class="description">Schinken- und Speckwürfel, Paprika- und Zwiebelwürfel, Creme fraiche, Käse</span>
+                    <p>Pizza Tonno    </p>
+                    <span class="description">Thunfisch, Zwiebel, Tomaten, Käse</span>
+                    <p>Pizza Toro   </p>
+                    <span class="description">spanischer Chorizo, Tomaten, Käse</span>
+                    <p>Pizza Vegetaria    </p>
+                    <span class="description">Paprika, Champignons, Blattspinat, Artischocken, Tomaten, Käse</span>
+
+                    <div class="ribbon">
+                        <span>Vegane Pizzen</span>
+                    </div>
+
+                    <p>Funghi </p>
+                    <span class="description">Tomaten, frische Champignons, veganer Pizzaschmelz aus Kokosöl  </span>
+                    <p>Gemüsepizza  </p>
+                    <span class="description">Tomaten, Paprika, Pilze, Artischocken, Spinat veganer Pizzaschmelz aus Kokosöl  </span>
+                    <p>Margerita   </p>
+                    <span class="description">Tomaten, veganer Pizzaschmelz aus Kokosöl  </span>
+                    
+                    <div class="ribbon">
+                        <span>Pizzen mit Kartoffel- und Tomatenscheiben</span>
+                    </div>
+
+                    <p>Pizza Calabria   </p>
+                    <span class="description">scharfe Salami, Tomaten, Käse, Mais, Knoblauch, Kartoffel- und Tomatenscheiben</span>
+                    <p>Pizza Chef    </p>
+                    <span class="description">Schinken, Tomaten, Käse, Kartoffel- und Tomatenscheiben</span>
+                    <p>Pizza Olivia    </p>
+                    <span class="description">Mais, milde Peperoni, Champignons, Oliven, Knoblauch, Tomaten, Käse, Tomaten- und Kartoffelscheiben</span>
+
+                    <div class="ribbon">
+                        <span>Die süße Pizza</span>
+                    </div>
+
+                    <p>Pizza Nutella    </p>
+                    <span class="description">Nutella, Puderzucker / Extra Banane</span>
+                </div>
+
+                <!-- ----------- PASTE --------------- -->
+                <div class="submenu" data-menufor="paste" style="display:none;">
+                    <p>Gnocchi </p>
+                    <span class="description">mit Tomatensoße oder Gorgonzolasoße</span>
+                    <p>Rigatoni Capriccio </p>
+                    <span class="description">Tomatensoße, Schinken, scharfe Salami, Champignons, Sahne, Kapern, Artischocken und Käse überbacken</span>
+                    <p>Rigatoni al Forno</p>
+                    <span class="description">Tomatensoße, Schinken, frischen Champignons, Sahne und Käse überbacken</p>
+                    <p>Schwäbische Lasagne</p>
+                    <span class="description">Maultaschen mit Tomatensoße und Käse überbacken</span>
+                    <p>Tortellini</p>
+                    <span class="descrsche Lasiption">Fleisch- oder Käsefüllung mit Tomatensoße oder Gorgonzolasoße</span>
+                </div>
+
+                <!-- poze insirate de-a lungul canvas -->
+                <img src="_img/spices.png" alt="group of spices" class="top-right">
+                <img src="_img/bg_tomatos2.png" alt="group of tomatos" class="top-left">
+                <img src="_img/bg_mozarella.png" alt=""class="very-top-right">
+                <img src="_img/bottom_collage2.png" alt="pizza slice" class="bottom">
+                <!-- poza dreapta jos -->
+                <img src="_img/placeholder_special.png" alt="pizzeria related image" class="bottom-left">
+            </div>
+		</section>
+
+        <section class="menulist flex">
+            <div class="container flex">
+                <p>* Laden Sie hier das Kundenbuch herunter</p>
+                <a class="cta-button" href="">lern mehr</a>
+            </div>
+        </section>
 		<section class="call-us">
 			<p>
 				Ruf uns jetzt an <a class="tel" href="tel:07323-952448">07323 952448</a>
@@ -99,7 +264,7 @@
 						>Marktplatz 8-89547<br />Gerstetten</a
 					>
 					<br />
-					<a href="" class="footer-button">lern mehr</a>
+					<a href="" class="cta-button">lern mehr</a>
 				</div>
 			</div>
 		</section>
