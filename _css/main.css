@@ -469,6 +469,17 @@ footer a:hover {
 .pictures {
 	background: url('../_img/icon_icecream_small.png') top right no-repeat;
 }
+
+/***************** div cu info despre alergeni etc ************/
+.food-info {
+    padding-top: 120px;
+    padding-left: 330px;
+    color:#fff;
+}
+.food-info p {
+    margin-bottom: 5px;
+}
+
 /**************** banner de CALL US ***************/
 .call-us {
 	padding: 45px 0 45px 0;
@@ -495,6 +506,7 @@ footer a:hover {
 	font-weight: bold;
 	margin-bottom: 0;
 	color: #1e2832;
+    line-height: 67px;
 }
 /******************** PAGINILE DE MENIURI *********************/
 .menu-categories {
@@ -524,25 +536,21 @@ footer a:hover {
 	height: max(50%, 90px);
 	filter: sepia(100%);
 }
-
+.menu-category span {
+    display:flex;
+    align-items: center;
+    min-height: 67px;
+}
 .menu-category:hover img,
 .menu-category.current img {
 	filter: sepia(0%);
-}
-/* cand e sticky raman doar pozele */
-.menu-categories.sticky .menu-category {
-	height: auto;
-	/* background-image: none; */
-}
-.menu-categories.sticky .menu-category span {
-	display: none;
 }
 
 /* ************* MENU CONTAINER AND ITEMS ********* */
 .menu-container {
 	/* background: url('../_img/bg_menu_details.png') bottom right no-repeat; */
 	min-height: 600px;
-	padding: 0 0 340px 0;
+	padding: 0 0 140px 0;
 }
 
 .menu-canvas {
@@ -554,6 +562,7 @@ footer a:hover {
 	padding: 130px 80px 130px 80px;
     position: relative;
 }
+/* --------- pozitionarea imaginilor de-a lungul meniului  */
 .menu-canvas img {
     position:absolute;
     z-index: 3;
@@ -565,6 +574,14 @@ footer a:hover {
 .menu-canvas img.very-top-right {
     top:-120px;
     right:-190px;
+}
+.menu-canvas img.middle-left {
+    top:40%;
+    left:-210px;
+}
+.menu-canvas img.middle-right {
+    top:60%;
+    right:-170px;
 }
 .menu-canvas img.top-left {
     top:20px;
@@ -578,6 +595,7 @@ footer a:hover {
     bottom:-150px;
     right:0px;
 }
+/********************/
 .menu-canvas p {
     margin-bottom:0.5rem;
     font-size:2.2rem;

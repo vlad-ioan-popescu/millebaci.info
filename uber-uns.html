@@ -31,6 +31,7 @@
 		}
 		.hero {
 			height: 600px;
+
 		}
 		.hero-img {
 			position: relative;
@@ -47,6 +48,11 @@
 			background: url('../_img/icon_pizza.png') bottom center no-repeat,
 				url('../_img/bg_beige_cloth.jpg') repeat;
 		}
+        .main-img {
+            position:relative; 
+            top:-80px;
+            border-radius: 0 0 60px 60px;
+        }
 	</style>
 	<body>
 		<div class="desktop-nav">
@@ -55,7 +61,7 @@
 				<a href="/" class="nav-item">Home</a>
 				<a href="" class="nav-item current">Über uns</a>
 				<a href="pizzeria.html" class="nav-item">Pizzeria</a>
-				<a href="" class="nav-item">Eiscaf&eacute;</a>
+				<a href="eiscafe.html" class="nav-item">Eiscafé</a>
 				<a href="" class="nav-item">Fotos</a>
 				<a href="" class="nav-item">Kontakt</a>
 				<a href="tel:07323-952448" class="nav-item cta">Jetzt anrufen</a>
@@ -78,6 +84,9 @@
 		<div class="tiles bg_beige" id="separatorHero"></div>
 
 		<section class="about-us">
+            <div class="container">
+                <img src="_img/interior1.jpg" class="main-img" >
+            </div>
 			<div class="container flex">
 				<div class="pictures">
 					<div class="polaroid-container center" style="rotate: 8deg">

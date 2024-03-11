@@ -64,6 +64,17 @@ $(document).ready(function () {
                     $('[data-menufor="' + this.dataset.category + '"]').fadeIn(300);
 
                     $('.bottom-left').fadeIn(300);
+
+                    if(this.dataset.category == 'pizza' || this.dataset.category == 'inghetata') {
+                        
+                        $(".pizza-only").show();
+                        $(".icecream-only").show();
+                    }
+                    else {
+                        
+                        $(".pizza-only").hide();
+                        $(".icecream-only").hide();
+                    }
                 }
                 , 400);
 		})
