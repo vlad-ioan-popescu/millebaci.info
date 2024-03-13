@@ -56,6 +56,14 @@
 	width: min(94%, 1200px);
 	margin: 0 auto;
 }
+
+/******************** COLORS UTILITIES **************/
+.light {
+	color: #ddd5cc;
+}
+.yellow {
+    color:#f3c24d;
+}
 /* *************************************  GENERAL  STYLES ************************* */
 h1,
 h2,
@@ -67,9 +75,7 @@ h2 {
 	font-size: 3rem;
 	margin: 35px 0;
 }
-.light {
-	color: #ddd5cc;
-}
+
 h2.underline {
 	padding-bottom: 50px;
 	background: url('../_img/line_decor_gray.png') no-repeat bottom center;
@@ -149,6 +155,9 @@ section {
 	top: 20px;
 	left: 0;
 	transition: background-color 0.2s linear;
+}
+.desktop-nav .container {
+    width: min(1260px, 96%);
 }
 #logo {
 	width: 120px;
@@ -477,7 +486,7 @@ footer a:hover {
     color:#fff;
 }
 .food-info p {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 /**************** banner de CALL US ***************/
@@ -558,26 +567,22 @@ footer a:hover {
 		url('../_img/bg_menu_canvas_bottom.jpg') bottom center no-repeat,
 		url('../_img/bg_menu_canvas_middle.jpg') top center repeat-y;
 	background-color: #ddd5cc;
-	min-height: 700px;
+	min-height: 800px;
 	padding: 130px 80px 130px 80px;
     position: relative;
 }
-/* --------- pozitionarea imaginilor de-a lungul meniului  */
+/* --------- pozitionarea imaginilor de-a lungul meniului aici e pizza, inghetata e overwrite in pagina ei */
 .menu-canvas img {
     position:absolute;
     z-index: 3;
-}
-.menu-canvas img.top-right {
-    top:300px;
-    right:-50px;
 }
 .menu-canvas img.very-top-right {
     top:-120px;
     right:-190px;
 }
-.menu-canvas img.middle-left {
-    top:40%;
-    left:-210px;
+.menu-canvas img.top-right {
+    top:300px;
+    right:-50px;
 }
 .menu-canvas img.middle-right {
     top:60%;
@@ -586,6 +591,10 @@ footer a:hover {
 .menu-canvas img.top-left {
     top:20px;
     left:-150px;
+}
+.menu-canvas img.middle-left {
+    top:40%;
+    left:-210px;
 }
 .menu-canvas img.bottom-left {
     bottom:-230px;
@@ -639,4 +648,30 @@ footer a:hover {
     width:30px;
     height:100%;
     background: url('../_img/bg_ribbon_right.png') top left no-repeat;
+}
+
+
+/**************** PAGINA DE CONTACT **********************/
+.kontakt-div {
+    padding:20px;
+    margin-top:100px;
+    color:#fff;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kontakt-div h2 {
+    font-size:2.5rem;
+}
+.kontakt-div p {
+    margin-bottom:15px;
+}
+.kontakt-div.center {
+    background-color: #1e2832;
+}
+#zeitplan {
+    flex:1.2;
+    align-items: flex-end;
 }

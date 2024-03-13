@@ -15,6 +15,7 @@ $(document).ready(function () {
 			const [entry] = entries;
 
 			if (!entry.isIntersecting) {
+                
 				nav.classList.add('faded');
 
 				logo.setAttribute('src', '_img/logo_dark.png');
@@ -59,22 +60,32 @@ $(document).ready(function () {
 
             $('.bottom-left').attr('src','_img/placeholder_' + this.dataset.category + '.png');
             
+            if(this.dataset.category == 'pizza' || this.dataset.category == 'inghetata') {
+                        
+                $(".pizza-only").fadeIn();
+
+                $(".icecream-only").fadeIn();
+            }
+            else {
+                
+                $(".pizza-only").fadeOut();
+
+                $(".icecream-only").fadeOut();
+            }
+            if(this.dataset.category == 'bauturi') {
+
+                $(".no-drinks").fadeOut();
+            }
+            else {
+                
+                $(".no-drinks").fadeIn();
+            }
             setTimeout(
                 () => {
+
                     $('[data-menufor="' + this.dataset.category + '"]').fadeIn(300);
 
                     $('.bottom-left').fadeIn(300);
-
-                    if(this.dataset.category == 'pizza' || this.dataset.category == 'inghetata') {
-                        
-                        $(".pizza-only").show();
-                        $(".icecream-only").show();
-                    }
-                    else {
-                        
-                        $(".pizza-only").hide();
-                        $(".icecream-only").hide();
-                    }
                 }
                 , 400);
 		})
