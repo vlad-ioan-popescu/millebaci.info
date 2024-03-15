@@ -1,5 +1,4 @@
 // on document load...
-
 $(document).ready(function () {
 	// intersection observer la header
 	const header = document.querySelector('.hero');
@@ -119,3 +118,5 @@ function scrollToTop() {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 }
+
+

@@ -653,17 +653,18 @@ footer a:hover {
 
 /**************** PAGINA DE CONTACT **********************/
 .kontakt-div {
-    padding:20px;
+    padding:20px 0 0 20px;
     margin-top:100px;
     color:#fff;
     flex:1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .kontakt-div h2 {
     font-size:2.5rem;
+    align-self: center;
 }
 .kontakt-div p {
     margin-bottom:15px;
@@ -672,6 +673,30 @@ footer a:hover {
     background-color: #1e2832;
 }
 #zeitplan {
-    flex:1.2;
+    flex:1.1;
     align-items: flex-end;
+}
+
+
+/****************** GALERIA DE IMAGINI ******************/
+.photo-container {
+    background-color: #ddd5cc;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+    gap:15px;
+    padding:15px;
+    margin-bottom:100px;
+}
+.photo {
+    width:100%;
+    height:100%;
+    background-color: #1e2832;
+}
+.corner-image {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.all-row {
+    grid-column: span 3;
 }
