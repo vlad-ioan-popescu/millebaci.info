@@ -123,6 +123,7 @@ ol {
 	width: 170px;
 }
 .polaroid {
+    width: 100%;
 	padding: 20px 20px 40px 20px;
 	background-color: #fff;
 	box-shadow: 5px 5px 10px #666;
@@ -262,11 +263,13 @@ section {
 #photo_aboutus.rotated {
 	rotate: 12deg;
 }
-#aboutus_left {
+#aboutus-left {
 	background: url('../_img/bg_tomatos.png') no-repeat bottom right;
 	padding-bottom: 100px;
 }
-
+#aboutus-right {
+    flex:0.7;
+}
 /*************************************** MENU ***********************************/
 
 /* gridul de elemente de meniu */
@@ -278,27 +281,25 @@ section {
 }
 .grid-container {
 	display: grid;
-	/* grid-template-rows: auto auto; */
-	gap: 10px; /* Gap between grid items */
-	/* max-width: 800px; Adjust as needed */
+	gap: 15px; /* Gap between grid items */
 	margin: 5px auto; /* Center horizontally */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
 }
-.top-row {
-	grid-template-columns: repeat(4, 1fr); /* 4 columns */
-}
-.bottom-row {
-	width: 75%;
-	grid-template-columns: repeat(3, 1fr); /* 4 columns */
-}
+
 
 /* hover la elemente */
 .menu-item {
-	width: 300px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
 	overflow: hidden;
+    text-align:center;
+}
+.menu-item:nth-of-type(5),.menu-item:nth-of-type(6),.menu-item:nth-of-type(7) {
+    margin-left:50%;
 }
 .menu-item .menu-overlay {
 	background: rgba(0, 0, 0, 0.6);
@@ -339,8 +340,8 @@ section {
 	left: 50%;
 	opacity: 1;
 }
-.menu-item img {
-	max-width: 100%;
+.menu-item img.menu-image {
+	width: 100%;
 	height: auto;
 }
 .menu-item .menu-text {
@@ -477,12 +478,13 @@ footer a:hover {
 }
 .pictures {
 	background: url('../_img/icon_icecream_small.png') top right no-repeat;
+    flex:0.9;
 }
 
 /***************** div cu info despre alergeni etc ************/
 .food-info {
     padding-top: 120px;
-    padding-left: 330px;
+    padding-left: 200px;
     color:#fff;
 }
 .food-info p {
@@ -706,4 +708,56 @@ footer a:hover {
 }
 .two-rows {
     grid-row:span 2;
+}
+
+
+/*----------------------------------------------------*/
+/***************** RESPONSIVE under 1300px ************/
+
+/* menu grid de pe prima pagina */
+@media only screen and (max-width: 1259px) {
+	.menu-item:nth-of-type(5),.menu-item:nth-of-type(6),.menu-item:nth-of-type(7) {
+        margin-left:0;
+    }
+}
+
+
+/*----------------------------------------------------*/
+/***************** RESPONSIVE under 1200px ************/
+
+@media only screen and (max-width: 1230px) {
+    /* all flex gap */
+    .flex {
+        gap:9px;
+    }
+    /* nav bar */
+    .cta {
+        display: none;
+    }
+    .desktop-nav .nav-item {
+        font-size: 1.3rem;
+        padding: 0.4rem 0.2rem;
+    }
+    /* bannerele si butoanele */
+    .cta-button {
+        font-size:1.2rem;
+        padding:0.7rem 2.2rem;
+    }
+    .menulist p {
+        font-size:1.8rem;
+        line-height: 50px;
+    }
+    .call-us p {
+        font-size: 2rem;
+    }
+    /* coloana de mijloc din footer */
+    .footer-item:nth-of-type(2) {
+        padding-left: 80px;
+    }
+
+    /* hero image la index */
+    #banner {
+        width:min(98%, 950px);
+        margin-top:100px;
+    }
 }
