@@ -1,22 +1,22 @@
 /* imported fonts */
 @font-face {
-	font-family: 'Granny';
-	src: url('../_fonts/granny_regular.ttf') format('truetype');
+    font-family: 'Granny';
+    src: url('../_fonts/granny_regular.ttf') format('truetype');
 }
 :root {
-	/* smooth animation to anchor links */
-	scroll-behavior: smooth;
+    /* smooth animation to anchor links */
+    scroll-behavior: smooth;
 }
 
 /*******************************  DEFAULTS, RESET ***************************/
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: none;
-	border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
 }
 
 /****************TYPOGRAPHY ******************/
@@ -24,118 +24,123 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: 'Lora', serif;
-    width:94%;
-    margin:0 auto;
+    font-family: 'Lora', serif;
+    width: 94%;
+    margin: 0 auto;
 }
 h2 {
-	font-size: 3rem;
-    margin-bottom:35px;
+    font-size: 3rem;
+    margin-bottom: 35px;
 }
 
 h2.underline {
-	padding-bottom: 50px;
-	background: url('../_img/line_decor_gray.png') no-repeat bottom center;
+    padding-bottom: 50px;
+    background: url('../_img/line_decor_gray.png') no-repeat bottom center;
 }
 h2.underline.light {
-	background: url('../_img/line_decor_light.png') no-repeat bottom center;
+    background: url('../_img/line_decor_light.png') no-repeat bottom center;
 }
 p {
-	font-size: 1.4rem;
-    width:94%;
+    font-size: 1.4rem;
+    width: 94%;
     margin: 0 auto;
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
-p.light {
-	color: #ddd5cc;
+p.small {
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 a {
     text-decoration: none;
 }
 /*********************** GENERALE **************************/
 html {
-	background-color: #1e2832;
+    background-color: #1e2832;
 }
 body {
-	font-family: 'Raleway', sans-serif;
-	line-height: 1.4;
-    min-height:2000px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    min-height: 2000px;
     text-align: center;
     position: relative;
 }
 section {
-	padding-top: 30px;
-    width:100%;
+    padding: 60px 3%;
+    width: 100%;
 }
 /* prima sectiune face loc la meniu */
 section:nth-of-type(1) {
-    margin-top:120px;
-    padding-top:15px;
+    margin-top: 120px;
+    padding: 0;
+    padding-top: 15px;
 }
 /*************** UTILITIES *************/
+.light {
+    color: #ddd5cc;
+}
 .flex {
-    display:flex;
-    gap:25px;
+    display: flex;
+    gap: 25px;
     justify-content: space-around;
     align-items: center;
 }
 /******* polaroid photos **********/
 .polaroid-container {
-    width:92%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .scotch {
-	position: relative;
-	bottom: -15px;
-	width: 170px;
+    position: relative;
+    bottom: -15px;
+    width: 170px;
 }
 .polaroid {
     width: 100%;
-	padding: 20px 20px 40px 20px;
-	background-color: #fff;
-	box-shadow: 5px 5px 10px #666;
-    margin-bottom: 60px;;
+    padding: 20px 20px 40px 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #666;
+    margin-bottom: 60px;
 }
 
 .cta-button {
-	background-color: #f3c24d;
-	color: #fff;
-	font-size: 1.7rem;
-	font-weight: bold;
-	padding: 1rem 4rem;
-	border-radius: 20px;
+    background-color: #f3c24d;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem 4rem;
+    border-radius: 20px;
 }
 
 /***************** menu nav ******************/
 nav {
-    width:100%;
+    width: 100%;
     text-align: right;
-    padding:20px 5%;
-    height:120px;
+    padding: 20px 5%;
+    height: 120px;
     overflow: hidden;
-	background-color: #1e2832;
-    position:fixed;
-    z-index:5;
-    top:0;
+    background-color: #1e2832;
+    position: fixed;
+    z-index: 5;
+    top: 0;
 }
 nav.open {
     background-color: #ddd5cc;
-    height:auto;
+    height: 100%;
 }
 nav .icons {
-    width:62%;
-    float:left;
+    width: 62%;
+    float: left;
     display: flex;
     justify-content: space-between;
     align-items: top;
 }
 nav a.nav-item {
-    display:block;
+    display: block;
     text-align: left;
-    color:#1e2832;
-    padding:5px 0 5px 35px;
+    color: #1e2832;
+    padding: 5px 0 5px 35px;
     border-bottom: 1px solid #ccc;
     text-decoration: none;
     font-size: 22px;
@@ -145,29 +150,202 @@ nav a.nav-item {
 }
 #menu-icon {
     text-align: right;
-    width:50px;
-    margin-bottom:40px;
+    width: 50px;
+    margin-bottom: 40px;
 }
-
-/*********** BANNER *************/
+/******************* PAGINA PRINCIPALA *****************/
+/*********** banner *************/
 .banner {
     position: relative;
-    bottom:-7px;
+    bottom: -7px;
 }
 .banner img {
-    width:100%;
+    width: 100%;
 }
-/************** ABOUT US *************/
+/************** about us *************/
 .aboutus {
-	background: url('../_img/bg_tile_grey.png') bottom left repeat-x,
-		url('../_img/bg_beige_cloth.jpg') repeat;
-    padding-bottom:120px;
+    background: url('../_img/bg_tile_grey.png') bottom left repeat-x,
+        url('../_img/bg_beige_cloth.jpg') repeat;
+    padding-bottom: 120px;
 }
 .aboutus p:nth-of-type(1) {
-    background:url('../_img/bg_tomatos.png') bottom right no-repeat;
-    padding-bottom:80px;
+    background: url('../_img/bg_tomatos.png') bottom right no-repeat;
+    padding-bottom: 80px;
 }
 .aboutus p:nth-of-type(2) {
-    background:url('../_img/line_decor_gray.png') bottom center no-repeat;
-    padding-bottom:50px;
+    background: url('../_img/line_decor_gray.png') bottom center no-repeat;
+    padding-bottom: 40px;
+}
+/********* menu links ******/
+/* gridul de elemente de meniu */
+.menu {
+    background: url('../_img/bg_fade.png') top left repeat-x,
+        url('../_img/bg_tile_beige.png') bottom left repeat-x,
+        url('../_img/bg_gray_wood_vertical.jpg') repeat;
+    position: relative;
+    top: -1px;
+    padding: 60px 3%;
+}
+.grid-container {
+    display: grid;
+    gap: 15px; /* Gap between grid items */
+    margin: 5px auto; /* Center horizontally */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+/* hover la elemente */
+.menu-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-item .menu-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+/* .menu-item:hover .menu-overlay {
+	opacity: 1;
+} */
+.menu-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.menu-details img {
+    width: min(90px, 45%);
+}
+.show .menu-details {
+    top: 67%;
+    left: 50%;
+    opacity: 1;
+}
+.show .menu-overlay {
+    opacity: 1;
+}
+.menu-item img.menu-image {
+    width: 100%;
+    height: auto;
+}
+.menu-item .menu-text {
+    font-family: 'Lora', serif;
+    color: #fff;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/********* testimonials ****************/
+.testimonials {
+    background: url('../_img/bg_beige_cloth.jpg') repeat;
+    position: relative;
+    top: -1px;
+}
+.testimonials .flex {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.card {
+    padding-top: 50px;
+    background: url('../_img/quote_decor.png') top center no-repeat;
+}
+.card p {
+    margin-bottom: 0.8rem;
+}
+.card p.name {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.testimonial-pic {
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px #999;
+}
+/************** footer ***************/
+footer {
+    padding: 60px 3%;
+    background-color: #1e2832;
+}
+footer img {
+    margin-bottom: 30px;
+}
+footer a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+.credits {
+    padding: 60px 0 30px 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/**************** banner de CALL US ***************/
+.call-us {
+	padding: 45px 0 45px 0;
+	text-align: center;
+	background-color: #888;
+}
+.call-us p {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+.call-us a {
+	color: #f3c24d;
+}
+
+/******************* banner de MENULIST *************/
+.menulist {
+	padding: 50px 0;
+    text-align: center;
+	background: #CAC2BB;
+}
+.menulist p {
+    font-size: 2.4rem;
+	font-weight: bold;
+	color: #1e2832;
+	margin-bottom: 30px;
+}
+
+/************************ ABOUT US PAGE ******************/
+.banner img {
+    width:100%;
+    position:relative;
+    bottom:-25px;
+}
+.about-us {
+    background: url('../_img/bg_beige_cloth.jpg') repeat;
+    padding: 0;
+    padding-bottom: 60px;
+}
+.about-us .main-img {
+    width:100%;
 }
