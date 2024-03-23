@@ -32,7 +32,6 @@ h2 {
     font-size: 3rem;
     margin-bottom: 35px;
 }
-
 h2.underline {
     padding-bottom: 50px;
     background: url('../_img/line_decor_gray.png') no-repeat bottom center;
@@ -60,7 +59,6 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.4;
-    min-height: 2000px;
     text-align: center;
     position: relative;
 }
@@ -78,11 +76,20 @@ section:nth-of-type(1) {
 .light {
     color: #ddd5cc;
 }
+.yellow {
+    color:#f3c24d;
+}
 .flex {
     display: flex;
     gap: 25px;
     justify-content: space-around;
     align-items: center;
+}
+.spacing {
+    background-color: #E5E0DB;
+    height:40px;
+    padding-top:80px;
+    width:100%;
 }
 /******* polaroid photos **********/
 .polaroid-container {
@@ -97,7 +104,7 @@ section:nth-of-type(1) {
     width: 170px;
 }
 .polaroid {
-    width: 100%;
+    width: 95%;
     padding: 20px 20px 40px 20px;
     background-color: #fff;
     box-shadow: 5px 5px 10px #666;
@@ -348,4 +355,151 @@ footer a {
 }
 .about-us .main-img {
     width:100%;
+    overflow: hidden;
+}
+
+/*************** PAGINILE DE MENIURI **************/
+/* meniurile de deasupra */
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5px;
+    background-color: #1e2832;
+    position:fixed;
+    top:120px;
+    z-index:4;
+    width:100%;
+    padding-top: 10px;
+}
+.menu-category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+.menu-category.current {
+	color: #fff;
+}
+.menu-category img {
+	width:67%;
+	filter: brightness(0.5);
+}
+.menu-category.current img {
+	filter: brightness(1);
+}
+.menu-category .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #E5E0DB; 
+    position: absolute;
+    bottom: -1px; /* Adjust as needed to control triangle position */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity:0;
+    z-index:1;
+}
+.menu-category.current .triangle-down {
+    opacity:1;
+}
+
+/* meniul propriuzis */
+.menu-canvas {
+	background: url('../_img/bg_menu_canvas_top.jpg') top center no-repeat,
+		url('../_img/bg_menu_canvas_bottom.jpg') bottom center no-repeat,
+		url('../_img/bg_menu_canvas_middle.jpg') top center repeat-y;
+    background-size: contain;
+    position: relative;
+    overflow-x:hidden;
+    top:-1px;
+}
+.menu-canvas p {
+    margin: 0 1rem 0 1rem;
+    font-size:1.8rem;
+    text-align: left;
+}
+.menu-canvas span.description {
+    display: block;
+    margin:0 1rem 1rem 2.5rem;
+    font-size:1.1rem;
+    text-align: left;
+
+}
+.menu-canvas img {
+    width:60%;
+}
+.ribbon {
+    margin-bottom: 1rem ;
+    text-align: left;
+    width:100%;
+}
+.ribbon span {
+    display:inline-block;
+    width:100%;
+    font-size:1.6rem;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    line-height:50px;
+    padding:5px 15px;
+    color:#ddd5cc;
+    background-color: #1e2832;
+    border-top:2px dashed #ddd5cc;
+    border-bottom:2px dashed #ddd5cc;
+}
+
+/* *************************PHOTOS ***********/
+.photos-container {
+    padding: 15px 3%;
+    background-color: #ddd5cc;
+    overflow-x: hidden;
+}
+.photo {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/************ CONTACT PAGE **************/
+.kontakt {
+    color:#ddd5cc;
+    padding-bottom: 50px;
+}
+.kontakt a, .address a {
+    text-align: left;
+    width: 70%;
+    margin:0 3% 20px 10%;
+}
+.kontakt p {
+    margin-bottom: 10px;
+}
+.contact-link {
+	display: block;
+	padding-left: 40px;
+	margin-bottom: 0.6rem;
+	line-height: 30px;
+	font-size: 1.3rem;
+	color: #fff;
+}
+.phone {
+	background: url('../_img/icon_phone.png') left center no-repeat;
+}
+.email {
+	background: url('../_img/icon_email.png') left center no-repeat;
+}
+.web {
+	background: url('../_img/icon_web.png') left center no-repeat;
+}
+.address-link {
+	background: url('../_img/icon_address_red.png') left top no-repeat;
+}
+.address {
+    padding-top: 30px;
+    background-color: #ddd5cc;
+    color:#1e2832;
+}
+.address a {
+    color:#1e2832;
 }

@@ -19,6 +19,7 @@ $(document).ready(function () {
             link.attr('href', link[0].dataset.link);
             link.click();
         }
+        // document.querySelectorAll('.menu-item').forEach(el => el.classList.remove("show"));
         $('.menu-item').removeClass('show');
         $('.menu-item a').attr('href', 'javascript:;');
         $(this).addClass('show');

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mille Baci - mobile friendly version</title>
+        <!-- webfonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="../_css/mobile.css" />
+
+        <!-- js -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous" >
+        </script>
+        <script src="../_scripts/script_mobile.js" defer></script>
+    </head>
+    <style>
+        .menu-categories {
+            grid-template-columns: repeat(3, 1fr);
+            padding:0 12.5% 0 12.5%;
+        }
+        section:nth-of-type(1) {
+            margin-top: 210px;
+            padding: 0;
+            padding-top: 30px;
+        }
+        
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="icons">
+                    <a id="tel-link" href="tel:07323-952448">
+                        <img
+                            src="../_img/icon_phone_green.png"
+                            alt="telephone link mille baci"
+                        />
+                    </a>
+                    <img
+                        src="../_img/logo_footer.png"
+                        id="logo"
+                        alt="logo mille baci"
+                    />
+                </div>
+                <img
+                    src="../_img/icon_menu_white.png"
+                    alt="menu icon"
+                    id="menu-icon"
+                />
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="uber-uns.html" class="nav-item">Über uns</a>
+                <a href="spezialitat.html" class="nav-item"
+                    >Spezialität des Hauses</a
+                >
+                <a href="insalati.html" class="nav-item"
+                    >Insalati & Antipasti</a
+                >
+                <a href="pizza.html" class="nav-item">Pizza</a>
+                <a href="pasta.html" class="nav-item">Pasta</a>
+                <a href="eis.html" class="nav-item">Eis</a>
+                <a href="eiskaffe.html" class="nav-item"
+                    >Eiskaffee & Mehr</a
+                >
+                <a href="getranke.html" class="nav-item">Getränke</a>
+                <a href="fotos.html" class="nav-item">Fotos</a>
+                <a href="kontakt.html" class="nav-item">Kontakt</a>
+            </nav>
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <a href="eis.html"><img src="../_img/menu_inghetata_icon.png" alt="menu icon" /></a>
+                    <div class="triangle-down"></div>
+                </div>
+                <div class="menu-category">
+                    <a href="eiskaffe.html"><img src="../_img/menu_cafea_icon.png" alt="menu icon" /></a>
+                    <div class="triangle-down"></div>
+                </div>
+                <div class="menu-category current">
+                    <a href="getranke.html"><img src="../_img/menu_bauturi_icon.png" alt="menu icon" /></a>
+                    <div class="triangle-down"></div>
+                </div>
+        </header>
+
+        <section class="spacing"></section>
+
+        <section class="menu-canvas">
+            <img  src="../_img/placeholder_bauturi.png" alt="insalati antipasti Mille Baci" style="width:60%"/>
+            <h2 class="underline">Getränke</h2>
+
+            <p>Getränke alkoholfrei</p>
+            <br>
+            <p>Säfte / Nektare</p>
+            <br>
+            <p>Bier Goldochsen</p>
+            <br>
+            <p>Aperitif/ Spirituosen/ Cocktails</p>
+            <br>
+            <p>Weißwein/ Rosé/ Rotwein</p>
+            <br>
+            <p>Warme Getränke</p>
+            <br><br>
+
+            <img src="../_img/lemonade.png" alt="chocolate shavings">
+        </section>
+
+        <section class="call-us">
+			<p>
+				Ruf uns jetzt an <a class="tel" href="tel:07323-952448">07323 952448</a>
+			</p>
+		</section>
+
+        <section class="menulist">
+            <div class="container">
+                <p>Laden Sie hier das Kundenbuch herunter</p>
+                <a class="cta-button" href="">PDF</a>
+            </div>
+        </section>
+
+        <footer>
+            <img src="../_img/logo_footer.png" alt="logo mille baci" width="120"/>
+            <a href="">Datenschutz</a>
+            <a href="">Gutschein</a>
+            <a href=""> Kundenbuch</a>
+            <a href="">Kontakt</a>
+			<div class="credits">&copy; 2024 - Karis Dev</div>
+
+        </footer>
+    </body>
+</html>
