@@ -23,11 +23,18 @@
 		<!-- js -->
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 		<script src="_scripts/script.js" defer></script>
+
+        <!-- redirectionare de pe desktop pe mobil -->
+        <script type="text/javascript">
+            if (screen.width <= 800) {
+                window.location = "http://millebaci.info/mobile/eis.html";
+            }
+        </script>
 	</head>
 	<!-- stiluri proprii paginii -->
 	<style>
 		body {
-			background: url('_img/bg_gray_wood.jpg') top left repeat-y;
+			background: url('_img/bg_gray_wood.webp') top left repeat-y;
 			background-size: 100%;
 		}
 		.hero {
@@ -91,11 +98,14 @@
             padding-top:220px;
             padding-left: 120px;
         }
+        .main-img {
+            border-radius: 0 60px 0 60px;
+        }
 	</style>
 	<body>
 		<div class="desktop-nav">
 			<div class="container flex flex-center">
-				<img src="_img/logo.png" id="logo" alt="logo Mille Baci" />
+				<img src="_img/logo.webp" id="logo" alt="logo Mille Baci" />
 				<a href="index.html" class="nav-item">Home</a>
 				<a href="uber-uns.html" class="nav-item">Über uns</a>
 				<a href="pizzeria.html" class="nav-item">Pizzeria</a>
@@ -108,21 +118,21 @@
 		<div class="hero center">
 			<h1>Leckeres Eis und Mehr</h1>
             <div class="container center">
-                <img src="_img/banner_eis.jpg" alt="banner promo eis und kaffe">
+                <img src="_img/banner_eis.webp" alt="banner promo eis und kaffe" class="main-img">
             </div>
             <br>
 			<div class="container">
 				<div class="flex menu-categories">
 					<div data-category="inghetata" class="menu-category current">
-						<img src="_img/menu_inghetata_icon.png" alt="menu icon" />
+						<img src="_img/menu_inghetata_icon.webp" alt="menu icon" />
 						<span>Eis</span>
 					</div>
 					<div  data-category="cafea" class="menu-category">
-						<img src="_img/menu_cafea_icon.png" alt="menu icon" />
+						<img src="_img/menu_cafea_icon.webp" alt="menu icon" />
 						<span>Eiskaffee & Mehr</span>
 					</div>
 					<div data-category="bauturi" class="menu-category">
-						<img src="_img/menu_bauturi_icon.png" alt="menu icon" />
+						<img src="_img/menu_bauturi_icon.webp" alt="menu icon" />
 						<span>Getränke</span>
 					</div>
 					
@@ -288,18 +298,18 @@
 
                 
                 <!-- poze insirate de-a lungul canvas -->
-                <img src="_img/chocolate_shavings.png" alt="group of spices" class="top-right no-drinks">
-                <img src="_img/ice_coffee.png" alt="glass of iced coffee" class="top-left no-drinks">
-                <img src="_img/icecream_splash.png" alt=""class="very-top-right">
-                <img src="_img/bottom_icecream.png" alt="coffee and strawberries" class="bottom" loading="lazy">
+                <img src="_img/chocolate_shavings.webp" alt="group of spices" class="top-right no-drinks">
+                <img src="_img/ice_coffee.webp" alt="glass of iced coffee" class="top-left no-drinks">
+                <img src="_img/icecream_splash.webp" alt=""class="very-top-right">
+                <img src="_img/bottom_icecream.webp" alt="coffee and strawberries" class="bottom" loading="lazy">
 
                 <!-- poze care apar doar la inghetataa, ca e luung -->
-                <img src="_img/icecream_yellow.png" alt="icecream cone" class="icecream-only middle-right" loading="lazy">
-                <img src="_img/icecream_brown.png" alt="icecream cone" class="icecream-only bottom-right" loading="lazy">
-                <img src="_img/icecream_scoop.png" alt="oils and spices" class="icecream-only middle-left" loading="lazy">
+                <img src="_img/icecream_yellow.webp" alt="icecream cone" class="icecream-only middle-right" loading="lazy">
+                <img src="_img/icecream_brown.webp" alt="icecream cone" class="icecream-only bottom-right" loading="lazy">
+                <img src="_img/icecream_scoop.webp" alt="oils and spices" class="icecream-only middle-left" loading="lazy">
 
                 <!-- poza dreapta jos -->
-                <img src="_img/placeholder_inghetata.png" alt="icecream cone" class="bottom-left" loading="lazy">
+                <img src="_img/placeholder_inghetata.webp" alt="icecream cone" class="bottom-left" loading="lazy">
 
             </div>
             <div class="food-info  container">
@@ -326,9 +336,9 @@
 					<p>Nulla non pulvinar tellus. Aliquam erat volutpat.</p>
 					<div class="social">
 						<a href=""
-							><img src="_img/icon_instagram.png" alt="instagram icon"
+							><img src="_img/icon_instagram.webp" alt="instagram icon"
 						/></a>
-						<a href=""><img src="_img/icon_fb.png" alt="fb icon" /></a>
+						<a href=""><img src="_img/icon_fb.webp" alt="fb icon" /></a>
 					</div>
 				</div>
 				<div class="footer-item left">
@@ -353,7 +363,7 @@
 			<div class="container flex flex-around flex-center">
 				<a href="">Datenschutz</a>
 				<a href="">Gutschein</a>
-				<img src="_img/logo_footer.png" alt="logo mille baci" />
+				<img src="_img/logo_footer.webp" alt="logo mille baci" />
 				<a href=""> Kundenbuch</a>
 				<a href="">Kontakt</a>
 			</div>
@@ -362,7 +372,7 @@
 
 		<!-- scroll to top arrow -->
 		<img
-			src="_img/icon_scrolltotop.png"
+			src="_img/icon_scrolltotop.webp"
 			alt="scroll to top"
 			id="scrollButton"
 			onclick="scrollToTop();"

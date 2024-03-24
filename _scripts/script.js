@@ -17,13 +17,13 @@ $(document).ready(function () {
                 
 				nav.classList.add('faded');
 
-				logo.setAttribute('src', '_img/logo_dark.png');
+				logo.setAttribute('src', '_img/logo_dark.webp');
 			}
 			else {
 
 				nav.classList.remove('faded');
 
-				logo.setAttribute('src', '_img/logo.png');
+				logo.setAttribute('src', '_img/logo.webp');
 			}
 		},
 		{
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
             $(this).addClass('current');
 
-            $('.bottom-left').attr('src','_img/placeholder_' + this.dataset.category + '.png');
+            $('.bottom-left').attr('src','_img/placeholder_' + this.dataset.category + '.webp');
             
             if(this.dataset.category == 'pizza' || this.dataset.category == 'inghetata') {
                         

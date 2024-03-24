@@ -6,8 +6,8 @@ $(document).ready(function () {
         $(this).toggleClass('open');
 
         $(this)[0].src = $(this).hasClass('open')
-            ? '../_img/icon_menu_close_grey.png'
-            : '../_img/icon_menu_white.png';
+            ? '../_img/icon_menu_close_grey.webp'
+            : '../_img/icon_menu_white.webp';
 
         $('nav').toggleClass('open');
     });

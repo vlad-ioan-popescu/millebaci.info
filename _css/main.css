@@ -78,10 +78,10 @@ h2 {
 
 h2.underline {
 	padding-bottom: 50px;
-	background: url('../_img/line_decor_gray.png') no-repeat bottom center;
+	background: url('../_img/line_decor_gray.webp') no-repeat bottom center;
 }
 h2.underline.light {
-	background: url('../_img/line_decor_light.png') no-repeat bottom center;
+	background: url('../_img/line_decor_light.webp') no-repeat bottom center;
 }
 p {
 	font-size: 1.4rem;
@@ -135,7 +135,7 @@ html {
 body {
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.4;
-	background: url('../_img/bg_gray_wood.jpg') no-repeat top center;
+	background: url('../_img/bg_gray_wood.webp') no-repeat top center;
 	background-size: 100% 530px;
 }
 section {
@@ -187,13 +187,13 @@ section {
 	color: #fff;
 	height: 60px;
 	width: 240px;
-	background-image: url('../_img/bg_cta_yellow.png');
+	background-image: url('../_img/bg_cta_yellow.webp');
 	background-repeat: no-repeat;
 	background-position: left center;
 	transition: background-image 0.2s ease;
 }
 .cta:hover {
-	background-image: url('../_img/bg_cta_green.png');
+	background-image: url('../_img/bg_cta_green.webp');
 }
 
 /* bara faded, cand se intra in site */
@@ -212,11 +212,11 @@ section {
 	border-bottom: 2px solid #1e2832;
 }
 .desktop-nav.faded .cta {
-	background-image: url('../_img/bg_cta_grey.png');
+	background-image: url('../_img/bg_cta_grey.webp');
 	color: #fff;
 }
 .desktop-nav.faded .cta:hover {
-	background-image: url('../_img/bg_cta_yellow.png');
+	background-image: url('../_img/bg_cta_yellow.webp');
 	color: #1e2832;
 }
 
@@ -242,10 +242,10 @@ section {
 }
 
 .bg_beige {
-	background-image: url('../_img/bg_tile_beige.png');
+	background-image: url('../_img/bg_tile_beige.webp');
 }
 .bg_grey {
-	background-image: url('../_img/bg_tile_grey.png');
+	background-image: url('../_img/bg_tile_grey.webp');
 }
 .darkgrey {
 	color: #222;
@@ -253,8 +253,8 @@ section {
 /*************************************** ABOUT US  ********************************/
 .about-us {
 	min-height: 500px;
-	background: url('../_img/bg_tile_grey.png') bottom left repeat-x,
-		url('../_img/bg_beige_cloth.jpg') repeat;
+	background: url('../_img/bg_tile_grey.webp') bottom left repeat-x,
+		url('../_img/bg_beige_cloth.webp') repeat;
 }
 #photo_aboutus {
 	rotate: 10deg;
@@ -263,7 +263,7 @@ section {
 	rotate: 12deg;
 }
 #aboutus-left {
-	background: url('../_img/bg_tomatos.png') no-repeat bottom right;
+	background: url('../_img/bg_tomatos.webp') no-repeat bottom right;
 	padding-bottom: 100px;
 }
 
@@ -274,9 +274,9 @@ section {
 
 /* gridul de elemente de meniu */
 .menu {
-	background: url('../_img/bg_fade.png') top left repeat-x,
-		url('../_img/bg_tile_beige.png') bottom left repeat-x,
-		url('../_img/bg_gray_wood_vertical.jpg') repeat;
+	background: url('../_img/bg_fade.webp') top left repeat-x,
+		url('../_img/bg_tile_beige.webp') bottom left repeat-x,
+		url('../_img/bg_gray_wood_vertical.webp') repeat;
 	position: relative;
 }
 .grid-container {
@@ -354,15 +354,15 @@ section {
 
 /******************************** TESTIMONIALS *******************************/
 .testimonials {
-	background: url('../_img/bg_tile_grey.png') bottom left repeat-x,
-		url('../_img/bg_beige_cloth.jpg') repeat;
+	background: url('../_img/bg_tile_grey.webp') bottom left repeat-x,
+		url('../_img/bg_beige_cloth.webp') repeat;
 	position: relative;
 }
 .card {
 	width: 32%;
 	padding-top: 50px;
 	margin: 50px 0;
-	background: url('../_img/quote_decor.png') top center no-repeat;
+	background: url('../_img/quote_decor.webp') top center no-repeat;
 }
 .card p {
 	margin-bottom: 0.8rem;
@@ -379,7 +379,7 @@ section {
 
 /******************** FIRST FOOTER **************/
 .footer {
-	background: url('../_img/bg_gray_wood_vertical.jpg') repeat;
+	background: url('../_img/bg_gray_wood_vertical.webp') repeat;
 	position: relative;
     bottom:0;
 	color: #fff;
@@ -410,16 +410,16 @@ section {
 	color: #fff;
 }
 .phone {
-	background: url('../_img/icon_phone.png') left center no-repeat;
+	background: url('../_img/icon_phone.webp') left center no-repeat;
 }
 .email {
-	background: url('../_img/icon_email.png') left center no-repeat;
+	background: url('../_img/icon_email.webp') left center no-repeat;
 }
 .web {
-	background: url('../_img/icon_web.png') left center no-repeat;
+	background: url('../_img/icon_web.webp') left center no-repeat;
 }
 .address {
-	background: url('../_img/icon_address.png') left top no-repeat;
+	background: url('../_img/icon_address.webp') left top no-repeat;
 	width: 230px;
 }
 .footer-item.right {
@@ -478,7 +478,7 @@ footer a:hover {
 	width: 45%;
 }
 .pictures {
-	background: url('../_img/icon_icecream_small.png') top right no-repeat;
+	background: url('../_img/icon_icecream_small.webp') top right no-repeat;
     flex:0.9;
 }
 .pictures .polaroid {
@@ -499,7 +499,7 @@ footer a:hover {
 .call-us {
 	padding: 45px 0 45px 0;
 	text-align: center;
-	background: #888 url('../_img/bg_tile_grey.png') bottom left repeat-x;
+	background: #888 url('../_img/bg_tile_grey.webp') bottom left repeat-x;
 }
 .call-us p {
 	font-size: 3rem;
@@ -544,12 +544,12 @@ footer a:hover {
 }
 .menu-category:hover,
 .menu-category.current {
-	background: url('../_img/icon_triangle.png') bottom center no-repeat;
+	background: url('../_img/icon_triangle.webp') bottom center no-repeat;
 	color: #fff;
 }
 .menu-category img {
 	height: max(50%, 90px);
-	filter: sepia(100%);
+	filter: brightness(0.5);
 }
 .menu-category span {
     display:flex;
@@ -558,20 +558,21 @@ footer a:hover {
 }
 .menu-category:hover img,
 .menu-category.current img {
-	filter: sepia(0%);
+    filter: brightness(1);
+
 }
 
 /* ************* MENU CONTAINER AND ITEMS ********* */
 .menu-container {
-	/* background: url('../_img/bg_menu_details.png') bottom right no-repeat; */
+	/* background: url('../_img/bg_menu_details.webp') bottom right no-repeat; */
 	min-height: 600px;
 	padding: 0 0 140px 0;
 }
 
 .menu-canvas {
-	background: url('../_img/bg_menu_canvas_top.jpg') top center no-repeat,
-		url('../_img/bg_menu_canvas_bottom.jpg') bottom center no-repeat,
-		url('../_img/bg_menu_canvas_middle.jpg') top center repeat-y;
+	background: url('../_img/bg_menu_canvas_top.webp') top center no-repeat,
+		url('../_img/bg_menu_canvas_bottom.webp') bottom center no-repeat,
+		url('../_img/bg_menu_canvas_middle.webp') top center repeat-y;
     background-size: contain;
 	background-color: #ddd5cc;
 	min-height: 800px;
@@ -635,7 +636,7 @@ footer a:hover {
     font-family: "Lora", serif;
     line-height:50px;
     padding:10px 25px;
-    background: url('../_img/bg_ribbon_middle.png') top left repeat-x;
+    background: url('../_img/bg_ribbon_middle.webp') top left repeat-x;
     color:#ddd5cc;
 }
 .ribbon span::before {
@@ -645,7 +646,7 @@ footer a:hover {
     top:0;
     width:30px;
     height:100%;
-    background: url('../_img/bg_ribbon_left.png') top left no-repeat;
+    background: url('../_img/bg_ribbon_left.webp') top left no-repeat;
 }
 .ribbon span::after {
     content: '';
@@ -654,7 +655,7 @@ footer a:hover {
     left:100%;
     width:30px;
     height:100%;
-    background: url('../_img/bg_ribbon_right.png') top left no-repeat;
+    background: url('../_img/bg_ribbon_right.webp') top left no-repeat;
 }
 
 

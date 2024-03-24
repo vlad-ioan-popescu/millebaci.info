@@ -23,11 +23,18 @@
 		<!-- js -->
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 		<script src="_scripts/script.js" defer></script>
+
+        <!-- redirectionare de pe desktop pe mobil -->
+        <script type="text/javascript">
+            if (screen.width <= 800) {
+                window.location = "http://millebaci.info/mobile/uber-uns.html";
+            }
+        </script>
 	</head>
 	<!-- stiluri proprii paginii -->
 	<style>
 		body {
-			background: url('_img/bg_gray_abstract.jpg') top left repeat;
+			background: url('_img/bg_gray_abstract.webp') top left repeat;
 		}
 		.hero {
 			height: 600px;
@@ -45,20 +52,20 @@
 			font-size: 4rem;
 		}
 		.about-us {
-			background: url('_img/fake.png') bottom center no-repeat,
-				url('_img/bg_beige_cloth.jpg') repeat;
+			background: url('_img/fake.webp') bottom center no-repeat,
+				url('_img/bg_beige_cloth.webp') repeat;
 		}
         .main-img {
             position:relative; 
             top:-80px;
-            border-radius: 0 0 60px 60px;
+            border-radius: 0 60px 0 60px;
             width: 100%;
         }
 	</style>
 	<body>
 		<div class="desktop-nav">
 			<div class="container flex flex-center">
-				<img src="_img/logo.png" id="logo" alt="logo Mille Baci" />
+				<img src="_img/logo.webp" id="logo" alt="logo Mille Baci" />
 				<a href="index.html" class="nav-item">Home</a>
 				<a href="uber-uns.html" class="nav-item current">Über uns</a>
 				<a href="pizzeria.html" class="nav-item">Pizzeria</a>
@@ -75,7 +82,7 @@
 					Pizzeria & Eiscafé!
 				</h2>
 				<img
-					src="_img/hero_aboutus.png"
+					src="_img/hero_aboutus.webp"
 					class="hero-img"
 					alt="pizza collage banner image"
 				/>
@@ -86,30 +93,30 @@
 
 		<section class="about-us">
             <div class="container">
-                <img src="_img/interior1.jpg" class="main-img" >
+                <img src="_img/interior1.webp" class="main-img" >
             </div>
 			<div class="container flex">
 				<div class="pictures">
 					<div class="polaroid-container center" style="rotate: 8deg">
-						<img src="_img/scotch.png" alt="" class="scotch" />
+						<img src="_img/scotch.webp" alt="" class="scotch" />
 						<img
-							src="_img/team1.jpg"
+							src="_img/team1.webp"
 							class="polaroid"
 							alt="meet the mille baci team"
 						/>
 					</div>
 					<div class="polaroid-container center" style="rotate: -8deg">
-						<img src="_img/scotch.png" alt="" class="scotch" />
+						<img src="_img/scotch.webp" alt="" class="scotch" />
 						<img
-							src="_img/team2.jpg"
+							src="_img/team2.webp"
 							class="polaroid"
 							alt="meet the mille baci team"
 						/>
 					</div>
 					<div class="polaroid-container center" style="rotate: 2deg">
-						<img src="_img/scotch.png" alt="" class="scotch" />
+						<img src="_img/scotch.webp" alt="" class="scotch" />
 						<img
-							src="_img/team3.jpg"
+							src="_img/team3.webp"
 							class="polaroid"
 							alt="meet the mille baci team"
 						/>
@@ -161,9 +168,9 @@
 					<p>Nulla non pulvinar tellus. Aliquam erat volutpat.</p>
 					<div class="social">
 						<a href=""
-							><img src="_img/icon_instagram.png" alt="instagram icon"
+							><img src="_img/icon_instagram.webp" alt="instagram icon"
 						/></a>
-						<a href=""><img src="_img/icon_fb.png" alt="fb icon" /></a>
+						<a href=""><img src="_img/icon_fb.webp" alt="fb icon" /></a>
 					</div>
 				</div>
 				<div class="footer-item left">
@@ -188,7 +195,7 @@
 			<div class="container flex flex-around flex-center">
 				<a href="">Datenschutz</a>
 				<a href="">Gutschein</a>
-				<img src="_img/logo_footer.png" alt="logo mille baci" />
+				<img src="_img/logo_footer.webp" alt="logo mille baci" />
 				<a href=""> Kundenbuch</a>
 				<a href="">Kontakt</a>
 			</div>
@@ -197,7 +204,7 @@
 
 		<!-- scroll to top arrow -->
 		<img
-			src="_img/icon_scrolltotop.png"
+			src="_img/icon_scrolltotop.webp"
 			alt="scroll to top"
 			id="scrollButton"
 			onclick="scrollToTop();"
