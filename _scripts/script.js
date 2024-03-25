@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 	headerObserver.observe(header);
 
-	// arata numarul la hover la CTA
+	// arata numarul de tel la hover la CTA
 	let oldTel = document.querySelector('.cta').innerText;
 
 	document.querySelector('.cta').addEventListener('mouseover', function (e) {
@@ -89,6 +89,9 @@ $(document).ready(function () {
                 , 400);
 		})
 	
+    // tot schimbare de categorii la meniuri, cand vine din alta pagina, dupa param url
+    const category = window.location.hash.slice(1);
+    $('.menu-category[data-category="' + category +'"] ').click();
 
 	// sageata de scroll to top
 	window.onscroll = function () {
