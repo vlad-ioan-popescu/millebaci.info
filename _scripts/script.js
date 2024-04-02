@@ -1,3 +1,5 @@
+
+
 // on document load...
 $(document).ready(function () {
 	// intersection observer la header
@@ -50,6 +52,7 @@ $(document).ready(function () {
 		e.target.innerText = oldTel;
 	});
 
+    
 	// schimbare categorii la meniuri
 	$('.menu-category').on('click', function() {
 		

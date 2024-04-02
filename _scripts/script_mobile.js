@@ -1,4 +1,4 @@
-// meniul
+
 
 $(document).ready(function () {
     // meniul (cel mai impottant)

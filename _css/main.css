@@ -364,8 +364,9 @@ section {
 	margin: 50px 0;
 	background: url('../_img/quote_decor.webp') top center no-repeat;
 }
-.card p {
+.card p:not(.name) {
 	margin-bottom: 0.8rem;
+    min-height: 300px;
 }
 .card p.name {
 	font-size: 1.7rem;
@@ -375,6 +376,8 @@ section {
 .testimonial-pic {
 	border-radius: 50%;
 	box-shadow: 4px 4px 10px #999;
+    border:5px solid #1e2832;
+    margin: 0 auto;
 }
 
 /******************** FIRST FOOTER **************/

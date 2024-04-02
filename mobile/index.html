@@ -14,6 +14,9 @@
 
         <!-- css -->
         <link rel="stylesheet" href="../_css/mobile.css" />
+         <!-- slick carousel -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- js -->
         <script
@@ -21,6 +24,7 @@
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="../_scripts/script_mobile.js" defer></script>
         
         <!-- redirectionare de pe desktop pe mobil -->
@@ -229,45 +233,57 @@
             <div class="testimonial-container flex">
                 <div class="card">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-                        soluta assumenda suscipit dolore, fugit eaque similique nemo at,
-                        magnam quidem totam, animi ad voluptatum quis perspiciatis
-                        laudantium dolorum modi earum.
+                        Das Mille Baci ist eine sehr gute Adresse wenn man in Gerstetten lecker essen möchte. Egal ob Pizza oder Pasta, es ist für jeden Geschmack etwas dabei. Die vielen verschiedenen Eissorten, vorallem im Sommer muss jeder mal probiert haben. Ich komme gerne wieder. 
                     </p>
                     <img
-                        src="../_img/testimonial_ingrid.webp"
-                        alt=""
+                        src="../_img/pic_jessy.webp"
+                        alt="testimonial jessy"
                         class="testimonial-pic"
+                                                width="200"
                     />
-                    <p class="name">Ingrid Schaeffer</p>
+                    <p class="name">Jessy</p>
                 </div>
                 <div class="card">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-                        soluta assumenda suscipit dolore, fugit eaque similique nemo at,
-                        magnam quidem totam, animi ad voluptatum quis perspiciatis
-                        laudantium dolorum modi earum.
+                        Das Mille Baci hat eine fantastische Qualität und sehr leckere Pizza und Pasta wie beim Italiener. <br>
+                        Einfach herrlich <br>
+                        Schmackhafte Eissorten. Sehr freundliches Personal. <br>
+                        Kann ich jedem empfehlen.
+
                     </p>
                     <img
-                        src="../_img/testimonial_iohann.webp"
+                        src="../_img/pic_damaris.webp"
                         alt=""
                         class="testimonial-pic"
+                                                width="200"
                     />
-                    <p class="name">Johannes Reutter</p>
+                    <p class="name">Damaris</p>
                 </div>
                 <div class="card">
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-                        soluta assumenda suscipit dolore, fugit eaque similique nemo at,
-                        magnam quidem totam, animi ad voluptatum quis perspiciatis
-                        laudantium dolorum modi earum.
+                        Gerstetten isn't really the nicest of German places, but this restaurant is the exception. On the city square they have a nice terras to enjoy the good italian food or their excellent desserts.
                     </p>
                     <img
-                        src="../_img/testimonial_lisa.webp"
+                        src="../_img/pic_reinier.webp"
                         alt=""
                         class="testimonial-pic"
+                        width="200"
                     />
-                    <p class="name">Ingrid Schaeffer</p>
+                    <p class="name">Reinier Vos</p>
+                </div>
+                <div class="card">
+                    <p>
+                        Sehr freundliche Bedienung, die Pizzen waren gut und der gemischte Salat hatte ein lecker Dressing.  Das Eis zum Nachtisch war superlecker.
+                        Preis-/Leistung absolut okay.
+                        Sehr schade, dass so wenig los war. Sie haben mehr verdient!!
+                    </p>
+                    <img
+                        src="../_img/pic_christine.webp"
+                        alt=""
+                        class="testimonial-pic"
+                        width="200"
+                    />
+                    <p class="name">Christine Baab</p>
                 </div>
             </div>
         </section>
@@ -279,11 +295,21 @@
                 <a href="https://www.facebook.com/millebaci.info"><img src="../_img/icon_fb.webp" alt="fb icon" /></a>
             </div>
             <a href="datenschutz.html">Datenschutz</a>
-            <a href="">Gutschein</a>
+            
             <a href="../kundenbuch.pdf">Kundenbuch</a>
             <a href="kontakt.html">Kontakt</a>
 			<div class="credits">&copy; 2024 - Karis Dev</div>
 
         </footer>
+        <script>
+            // carusel la testimonials
+            $(".testimonial-container").slick({
+                dots:true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+            })
+        </script>
     </body>
 </html>
