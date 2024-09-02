@@ -33,8 +33,33 @@
                 window.location = "http://millebaci.info/";
             }
         </script>
+        <style>
+            #overlay {
+                position:fixed;
+                inset:0;
+                background:rgba(0,0,0,0.5);
+                z-index:1000;
+            }
+            #modal {
+                display:flex;
+                height:100%;
+                width:100%;
+                /* place-items: center; */
+                justify-content: center;
+                align-items: center;
+            }
+            #modal img {
+                max-width: 85%;
+                height:auto;
+            }
+        </style>
     </head>
     <body>
+        <!-- <div id="overlay">
+            <div id="modal">
+                <img src="../_img/concediu_v.jpg" alt="banner vacation leave">
+            </div>
+        </div> -->
         <header>
             <nav>
                 <div class="icons">
@@ -106,7 +131,7 @@
             </div>
             <p>
                 <strong>
-                    Geöffnet täglich von 10:00 - 22:00 Uhr<br />
+                    Geöffnet täglich von 11:00 - 22:00 Uhr<br />
                     Pizza gibt es von 11:30 - 14:30 Uhr <br />
                     & von 17:30 - 21:30 Uhr
                 </strong>
@@ -310,6 +335,9 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false
+            })
+            $(document).ready(function() {
+                setTimeout(() => $("#overlay").fadeOut(), 3500);
             })
         </script>
     </body>

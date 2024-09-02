@@ -36,8 +36,31 @@
 		.hero {
 			height: 436px;
 		}
+        #overlay {
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,0.5);
+            z-index:1000;
+        }
+        #modal {
+            display:flex;
+            height:100%;
+            width:100%;
+            /* place-items: center; */
+            justify-content: center;
+            align-items: center;
+        }
+        #modal img {
+            max-height: 80%;
+            width:auto;
+        }
 	</style>
 	<body>
+        <!-- <div id="overlay">
+            <div id="modal">
+                <img src="_img/concediu_h.jpg" alt="banner vacation leave">
+            </div>
+        </div> -->
 		<div class="desktop-nav">
 			<div class="container flex flex-center">
 				<img src="_img/logo.webp" id="logo" alt="logo Mille Baci" />
@@ -319,6 +342,9 @@
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 3
+            })
+            $(document).ready(function() {
+                setTimeout(() => $("#overlay").fadeOut(), 3500);
             })
         </script>
 	</body>

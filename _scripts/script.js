@@ -56,41 +56,41 @@ $(document).ready(function () {
 	// schimbare categorii la meniuri
 	$('.menu-category').on('click', function() {
 		
-			removeCurrent();
+        removeCurrent();
 
-            $(this).addClass('current');
+        $(this).addClass('current');
 
-            $('.bottom-left').attr('src','_img/placeholder_' + this.dataset.category + '.webp');
+        $('.bottom-left').attr('src','_img/placeholder_' + this.dataset.category + '.webp');
+        
+        if(this.dataset.category == 'pizza' || this.dataset.category == 'inghetata') {
+                    
+            $(".pizza-only").fadeIn();
+
+            $(".icecream-only").fadeIn();
+        }
+        else {
             
-            if(this.dataset.category == 'pizza' || this.dataset.category == 'inghetata') {
-                        
-                $(".pizza-only").fadeIn();
+            $(".pizza-only").fadeOut();
 
-                $(".icecream-only").fadeIn();
+            $(".icecream-only").fadeOut();
+        }
+        if(this.dataset.category == 'bauturi') {
+
+            $(".no-drinks").fadeOut();
+        }
+        else {
+            
+            $(".no-drinks").fadeIn();
+        }
+        setTimeout(
+            () => {
+
+                $('[data-menufor="' + this.dataset.category + '"]').fadeIn(300);
+
+                $('.bottom-left').fadeIn(300);
             }
-            else {
-                
-                $(".pizza-only").fadeOut();
-
-                $(".icecream-only").fadeOut();
-            }
-            if(this.dataset.category == 'bauturi') {
-
-                $(".no-drinks").fadeOut();
-            }
-            else {
-                
-                $(".no-drinks").fadeIn();
-            }
-            setTimeout(
-                () => {
-
-                    $('[data-menufor="' + this.dataset.category + '"]').fadeIn(300);
-
-                    $('.bottom-left').fadeIn(300);
-                }
-                , 400);
-		})
+            , 400);
+    })
 	
     // tot schimbare de categorii la meniuri, cand vine din alta pagina, dupa param url
     const category = window.location.hash.slice(1);
